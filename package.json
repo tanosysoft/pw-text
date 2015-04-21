@@ -12,7 +12,11 @@
   },
   "homepage": "https://github.com/n2liquid/pw-text",
   "dependencies": {
-    "q": "^1.2.0",
-    "clear": "0.0.1"
+    "clear": "0.0.1",
+    "q": "^1.2.0"
+  },
+  "engines": {
+    "iojs": ">= 1.0.0",
+    "node": ">= 0.12.0"
   }
 }
