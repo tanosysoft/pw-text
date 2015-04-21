@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 "use strict";
-var clear = require('clear');
 var tw = require('./lib/typewriter');
-clear();
+tw.clear();
 tw.type({d:100}, "August 3, 9:47 AM", {w:500});
 tw.type("District Court");
 tw.type("Defendant Lobby No. 2", {w:2000});
