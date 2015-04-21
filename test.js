@@ -18,4 +18,6 @@ tw.typeSpeech("Mia", [
 	[{d:500}, ". . .", {w:1000}],
 	[{d:40}, "I can't see a thing!", {w:1000}],
 ]);
-tw.type({d:0}, "\n");
+tw.type({d:0}, "\n").then(function() {
+	process.exit();
+});
