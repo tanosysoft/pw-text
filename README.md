@@ -3,7 +3,7 @@
 I'm studying the viability of creating command-line games and how I should do it.
 
 Instead of coming up with my own game design just to try this out, though, I will use the first chapter of the Phoenix Wright: Ace Attorney video-game.
-Later, if I succeed, I intend to design my own very own games based on the code I develop here.
+Later, if I succeed, I intend to design my very own games based on the code I develop here.
 
 CAPCOM holds all rights to the Phoenix Wright: Ace Attorney video-game, including its characters and story.
 
