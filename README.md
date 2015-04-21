@@ -1,5 +1,7 @@
 # pw-text
 
+[![asciicast](https://asciinema.org/a/19003.png)](https://asciinema.org/a/19003)
+
 I'm studying the viability of creating command-line games and how I should do it.
 
 Instead of coming up with my own game design just to try this out, though, I will use the first chapter of the Phoenix Wright: Ace Attorney video-game.
