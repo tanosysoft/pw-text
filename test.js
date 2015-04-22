@@ -2,6 +2,7 @@
 "use strict";
 var q = require('q');
 var tw = require('./lib/typewriter');
+require('./lib/logQUnhandledReasonsOnExit');
 q.spawn(function*() {
 	tw.clear();
 	yield tw.paragraph ([
