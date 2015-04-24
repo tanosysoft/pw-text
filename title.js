@@ -1,7 +1,7 @@
 'use strict';
 var Q = require('q');
 var cli = require('./lib/novel-cli');
-var theFirstTurnabout = require('./the-first-turnabout.js');
+var theFirstTurnabout = require('./the-first-turnabout');
 module.exports = Q.async(function*() {
 	yield cli.clear();
 	yield cli.paragraph ([
