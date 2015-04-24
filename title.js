@@ -22,7 +22,8 @@ module.exports = Q.async(function*() {
 		{
 			matcher: /^Continue$/i,
 			fn: Q.async(function*() {
-				yield tw.paragraph({d:30}, "Konchinyuu desu!");
+				yield tw.paragraph({d:0}, "Booo! Not implemented! :(");
+				return false;
 			}),
 		},
 		{
