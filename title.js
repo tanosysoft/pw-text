@@ -2,12 +2,12 @@
 var q = require('q');
 var tw = require('./lib/typewriter');
 q.spawn(function*() {
-	tw.clear();
-	tw.paragraph ([
+	yield tw.clear();
+	yield tw.paragraph ([
 		[{d:30}, "Phoenix Wright"],
 		["Ace Attorney"],
 	]);
-	tw.paragraph ([
+	yield tw.paragraph ([
 		[" - New Game"],
 		[" - Continue"],
 	]);
