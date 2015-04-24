@@ -1,7 +1,7 @@
 'use strict';
-var q = require('q');
+var Q = require('q');
 var tw = require('./lib/typewriter');
-q.spawn(function*() {
+Q.spawn(function*() {
 	yield tw.clear();
 	yield tw.paragraph ([
 		[{d:30}, "Phoenix Wright"],

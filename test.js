@@ -1,9 +1,9 @@
 #!/usr/bin/env iojs
 "use strict";
-var q = require('q');
+var Q = require('q');
 var tw = require('./lib/typewriter');
 require('./lib/logQUnhandledReasonsOnExit');
-q.spawn(function*() {
+Q.spawn(function*() {
 	tw.clear();
 	yield tw.paragraph ([
 		[{d:100}, "August 3, 9:47 AM", {w:500}],
