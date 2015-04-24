@@ -1,19 +1,19 @@
 'use strict';
 var Q = require('q');
-var tw = require('./lib/typewriter');
+var cli = require('./lib/novel-cli');
 var theFirstTurnabout = require('./the-first-turnabout.js');
 module.exports = Q.async(function*() {
-	yield tw.clear();
-	yield tw.paragraph ([
+	yield cli.clear();
+	yield cli.paragraph ([
 		[{d:30}, "Phoenix Wright"],
 		["Ace Attorney"],
 	]);
-	yield tw.paragraph ([
+	yield cli.paragraph ([
 		[" - New Game"],
 		[" - Continue"],
 		[" - Quit"],
 	]);
-	yield tw.choice ([
+	yield cli.choice ([
 		{
 			matcher: /^New Game$/i,
 			fn: Q.async(function*() {
@@ -23,14 +23,14 @@ module.exports = Q.async(function*() {
 		{
 			matcher: /^Continue$/i,
 			fn: Q.async(function*() {
-				yield tw.paragraph({d:0}, "Booo! Not implemented! :(");
+				yield cli.paragraph({d:0}, "Booo! Not implemented! :(");
 				return false;
 			}),
 		},
 		{
 			matcher: /^Quit$/i,
 			fn: Q.async(function*() {
-				yield tw.breakLine();
+				yield cli.breakLine();
 				process.exit();
 			}),
 		},

@@ -1,17 +1,17 @@
 'use strict';
 var Q = require('q');
-var tw = require('./lib/typewriter');
+var cli = require('./lib/novel-cli');
 module.exports = Q.async(function*() {
-	yield tw.clear();
-	yield tw.paragraph ([
+	yield cli.clear();
+	yield cli.paragraph ([
 		[{d:40}, "Episode 1"],
 		["The First Turnabout"],
 	]);
-	yield tw.paragraph ([
+	yield cli.paragraph ([
 		[{d:30}, " - Back"],
 		[" - Confirm"],
 	]);
-	yield tw.choice ([
+	yield cli.choice ([
 		{
 			matcher: /^Back$/i,
 			fn: Q.async(function*() {
@@ -21,7 +21,7 @@ module.exports = Q.async(function*() {
 		{
 			matcher: /^Confirm$/i,
 			fn: Q.async(function*() {
-				yield tw.paragraph({d:0}, "Booo! Not implemented! :(");
+				yield cli.paragraph({d:0}, "Booo! Not implemented! :(");
 				return false;
 			}),
 		},
