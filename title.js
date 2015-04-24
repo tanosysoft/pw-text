@@ -1,6 +1,7 @@
 'use strict';
 var Q = require('q');
 var tw = require('./lib/typewriter');
+var theFirstTurnabout = require('./the-first-turnabout.js');
 module.exports = Q.async(function*() {
 	yield tw.clear();
 	yield tw.paragraph ([
@@ -16,7 +17,7 @@ module.exports = Q.async(function*() {
 		{
 			matcher: /^New Game$/i,
 			fn: Q.async(function*() {
-				yield tw.paragraph({d:30}, "Nyuu geemu desu!");
+				yield theFirstTurnabout();
 			}),
 		},
 		{
