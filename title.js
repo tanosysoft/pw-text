@@ -38,6 +38,6 @@ module.exports = Q.async(function*() {
 				yield tw.paragraph({d:0}, "?");
 				return false;
 			}),
-		}
+		},
 	]);
 });
