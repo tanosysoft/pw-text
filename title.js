@@ -34,12 +34,5 @@ module.exports = Q.async(function*() {
 				process.exit();
 			}),
 		},
-		{
-			matcher: 'default',
-			fn: Q.async(function*() {
-				yield tw.paragraph({d:0}, "?");
-				return false;
-			}),
-		},
 	]);
 });
