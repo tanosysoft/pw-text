@@ -10,6 +10,7 @@ module.exports = Q.async(function*() {
 	yield tw.paragraph ([
 		[" - New Game"],
 		[" - Continue"],
+		[" - Quit"],
 	]);
 	yield tw.choice ([
 		{
@@ -25,6 +26,13 @@ module.exports = Q.async(function*() {
 			}),
 		},
 		{
+			matcher: /^Quit$/i,
+			fn: Q.async(function*() {
+				yield tw.breakLine();
+				process.exit();
+			}),
+		},
+		{
 			matcher: 'default',
 			fn: Q.async(function*() {
 				yield tw.paragraph({d:0}, "?");
@@ -32,5 +40,4 @@ module.exports = Q.async(function*() {
 			}),
 		}
 	]);
-	process.exit();
 });
