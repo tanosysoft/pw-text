@@ -14,23 +14,22 @@ Q.spawn(function*() {
 	yield tw.choice ([
 		{
 			matcher: /^New Game$/i,
-			fn: function() {
-				return tw.paragraph({d:30}, "Nyuu geemu desu!");
-			},
+			fn: Q.async(function*() {
+				yield tw.paragraph({d:30}, "Nyuu geemu desu!");
+			}),
 		},
 		{
 			matcher: /^Continue$/i,
-			fn: function() {
-				return tw.paragraph({d:30}, "Konchinyuu desu!");
-			},
+			fn: Q.async(function*() {
+				yield tw.paragraph({d:30}, "Konchinyuu desu!");
+			}),
 		},
 		{
 			matcher: 'default',
-			fn: function() {
-				return tw.paragraph({d:0}, "?").then(function() {
-					return false;
-				});
-			},
+			fn: Q.async(function*() {
+				yield tw.paragraph({d:0}, "?");
+				return false;
+			}),
 		}
 	]);
 	process.exit();
