@@ -1,7 +1,7 @@
 'use strict';
 var Q = require('q');
 var tw = require('./lib/typewriter');
-Q.spawn(function*() {
+module.exports = Q.async(function*() {
 	yield tw.clear();
 	yield tw.paragraph ([
 		[{d:30}, "Phoenix Wright"],
