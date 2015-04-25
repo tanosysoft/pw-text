@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 'use strict';
 var Q = require('q');
 var cli = require('./lib/novel-cli');
@@ -16,8 +17,11 @@ module.exports = Q.async(function*() {
 			return;
 		}),
 		"Confirm": Q.async(function*() {
-			yield cli.paragraph({d:0}, "Booo! Not implemented! :(");
+			yield episodeBody();
 			return false;
 		}),
 	});
 });
+if(!module.parent) {
+	episodeBody();
+}
