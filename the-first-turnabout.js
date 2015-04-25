@@ -11,19 +11,13 @@ module.exports = Q.async(function*() {
 		[{d:30}, " - Back"],
 		[" - Confirm"],
 	]);
-	yield cli.choice ([
-		{
-			matcher: /^Back$/i,
-			fn: Q.async(function*() {
-				return;
-			}),
-		},
-		{
-			matcher: /^Confirm$/i,
-			fn: Q.async(function*() {
-				yield cli.paragraph({d:0}, "Booo! Not implemented! :(");
-				return false;
-			}),
-		},
-	]);
+	yield cli.choice ({
+		"Back": Q.async(function*() {
+			return;
+		}),
+		"Confirm": Q.async(function*() {
+			yield cli.paragraph({d:0}, "Booo! Not implemented! :(");
+			return false;
+		}),
+	});
 });
