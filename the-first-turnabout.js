@@ -171,6 +171,35 @@ episodeBody = Q.async(function*() {
 		[{who:"Phoenix"}, {dh:true}, {d:100}, "(Hmm...", {w:1000}, " The person responsible for your girlfriend's death?", {w:1000}],
 		[{di:true}, "The newspapers say it was", {w:500}, " you...)", {w:3000}],
 	]);
+	yield cli.clear();
+	yield cli.wait(2000);
+	yield cli.paragraph ([
+		[{who:"Phoenix"}, {dh:true}, {d:40}, "My name is Phoenix Wright.", {w:1000}, " Here's the story:", {w:1000}],
+		[{di:true}, "My first case is a fairly simple one.", {w:1000}],
+	]);
+	yield cli.paragraph ([
+		[{di:true}, "A young woman was killed in her apartment.", {w:1000}],
+		[{di:true}, "The guy they arrested was the unlucky sap dating her:", {w:500}],
+		[{di:true}, "Larry Butz...", {w:1000}, " my best friend since grade school.", {w:1500}],
+	]);
+	yield cli.paragraph ([
+		[{di:true}, "Our school had a saying:", {w:1000}],
+		[{di:true}, "\"When something smells,", {w:500}, " it's usually the Butz.\"", {w:2000}],
+		[{di:true}, "In the 23 years I've known him,", {w:250}, " it's usually been true.", {w:1000}],
+		[{di:true}, "He has a knack for getting himself in trouble.", {w:1000}],
+	]);
+	yield cli.paragraph ([
+		[{di:true}, "One thing I can say though:", {w:1000}, " it's usually not his fault.", {w:500}],
+		[{di:true}, "He just has terrible luck.", {w:1000}],
+	]);
+	yield cli.paragraph ([
+		[{di:true}, {id:10}, "But I know better than anyone", {w:250}, " that he's a good guy at heart.", {w:1000}],
+		[{di:true}, "That and I owe him one.", {w:250}, " Which is why I took the case...", {w:1000}],
+		[{di:true}, "to clear his name.", {w:1000}],
+	]);
+	yield cli.paragraph ([
+		[{di:true}, "And that's just what I'm going to do!", {w:3000}],
+	]);
 	process.exit();
 });
 if(!module.parent) {
