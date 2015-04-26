@@ -200,6 +200,102 @@ episodeBody = Q.async(function*() {
 	yield cli.paragraph ([
 		[{di:true}, "And that's just what I'm going to do!", {w:3000}],
 	]);
+	yield cli.clear();
+	yield cli.wait(2000);
+	yield cli.paragraph ([
+		[{d:100}, "August 3, 10:00 AM", {w:500}],
+		["District Court"],
+		["Courtroom No. 2", {w:2000}],
+	]);
+	yield cli.paragraph ([
+		[{d:80}, "The room is still filled with chatter from the audience"],
+		["as the judge prepares for the session.", {w:2000}],
+	]);
+	yield cli.paragraph ([
+		[{who:"Judge"}, {dh:true}, {d:0}, "*Bang!*", {w:1000}],
+		[{di:true}, {d:60}, "The court is now in session for the trial of Mr. Larry Butz.", {w:1000}],
+	]);
+	yield cli.paragraph ([
+		[{who:"Payne"}, {dh:true}, {d:45}, "The prosecution is ready,", {w:150}, " Your Honor.", {w:1000}],
+	]);
+	yield cli.paragraph ([
+		[{who:"Phoenix"}, {dh:true}, {d:40}, "The,", {w:250}, " um,", {w:500}, " defense is ready,", {w:250}, " Your Honor.", {w:1000}],
+	]);
+	yield cli.paragraph ([
+		[{who:"Judge"}, {dh:true}, {d:20}, "Ahem.", {w:500}],
+		[{di:true}, {d:60}, "Mr. Wright?", {w:1000}, " This is your first trial, is it not?", {w:1000}],
+	]);
+	yield cli.paragraph ([
+		[{who:"Phoenix"}, {dh:true}, {d:40}, "Y-", {w:250}, "Yes,", {w:250}, " Your Honor.", {w:500}],
+		[{di:true}, "I'm,", {w:150}, " um,", {w:250}, {id:30}, " a little nervous.", {w:1000}],
+	]);
+	yield cli.paragraph ([
+		[{who:"Judge"}, {dh:true}, {d:40}, "Your conduct during this trial will decide the fate of your client.", {w:1000}],
+		[{di:true}, "Murder is a serious charge.", {w:1000}],
+		[{di:true}, "For your client's sake,", {w:150}, " I hope you can control your nerves.", {w:1000}],
+	]);
+	yield cli.paragraph ([
+		[{who:"Phoenix"}, {dh:true}, {d:60}, "Thank...", {w:500}, " thank you,", {w:250}, " Your Honor.", {w:1000}],
+	]);
+	yield cli.paragraph ([
+		[{who:"Judge"}, {dh:true}, {d:60}, "...", {w:1500}],
+		[{di:true}, {d:40}, "Mr. Wright,", {w:250}, " given the circumstances...", {w:1000}],
+		[{di:true}, "I think we should have a test to ascertain your readiness.", {w:1000}],
+	]);
+	yield cli.paragraph ([
+		[{who:"Phoenix"}, {dh:true}, {d:40}, "Yes, Your Honor.", {w:1000}],
+		[{di:true}, {d:65}, "(Gulp...", {w:750}, " Hands", {w:500}, " shaking...",
+			{w:750}, " Eyesight", {w:500}, "... fading...)", {w:1000}],
+	]);
+	yield cli.paragraph ([
+		[{who:"Judge"}, {dh:true}, {d:40}, "The test will consist of a few simple questions.", {w:1000}],
+		[{di:true}, "Answer them clearly and concisely.", {w:1000}],
+		[{di:true}, "Please state the name of the defendant in this case.", {w:500}],
+	]);
+	yield cli.paragraph ([
+		[{d:40}, " - Phoenix Wright"],
+		[" - Larry Butz"],
+		[" - Mia Fey"],
+	]);
+	yield cli.choice ({
+		"Phoenix Wright": Q.async(function*() {
+			yield cli.breakLine();
+			yield cli.paragraph ([
+				[{who:"Phoenix"}, {dh:true}, {d:60}, "Um...", {w:500}, " the defendant...", {w:250}, " is me,", {w:250}, " right?", {w:1000}],
+			]);
+			yield cli.paragraph ([
+				[{who:"Mia"}, {dh:true}, {d:20}, "Wright!", {w:500}, " Have you completely lost your mind?", {w:500}, " Focus!", {w:1000}],
+				[{di:true}, {d:40}, "The defendant is the person on trial!", {w:1000}],
+				[{di:true}, "You're his lawyer!", {w:1000}],
+			]);
+			yield cli.paragraph ([
+				[{who:"Phoenix"}, {dh:true}, {d:40}, "Um,", {w:150}, " er,", {w:250}, " eh?", {w:1000}],
+				[{di:true}, "Oh yeah,", {w:250}, " right!", {w:500}, " Eh heh heh.", {w:1000}],
+			]);
+			yield cli.paragraph ([
+				[{who:"Mia"}, {dh:true}, {d:40}, "This is no laughing matter!", {w:1000}],
+				[{di:true}, "You did pass the bar, didn't you?", {w:1000}],
+			]);
+			yield cli.paragraph ([
+				[{d:100}, "The judge shakes his head, negatively.", {w:1000}],
+			]);
+			yield cli.paragraph ([
+				[{who:"Judge"}, {dh:true}, {d:60}, "Sorry,", {w:250}, " I couldn't hear your answer.", {w:500},
+					" I'll ask once more:", {w:1000}],
+				[{di:true}, "Please state the name of the defendant in this case.", {w:500}],
+			]);
+			yield cli.paragraph ([
+				[{d:40}, " - Phoenix Wright"],
+				[" - Larry Butz"],
+				[" - Mia Fey"],
+			]);
+			return false;
+		}),
+		"Larry Butz": Q.async(function*() {
+		}),
+		"Mia Fey": Q.async(function*() {
+		}),
+	});
 	process.exit();
 });
 if(!module.parent) {
