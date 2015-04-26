@@ -14,9 +14,7 @@ module.exports = Q.async(function*() {
 		[" - Confirm"],
 	]);
 	yield cli.choice ({
-		"Back": Q.async(function*() {
-			return;
-		}),
+		"Back": null,
 		"Confirm": Q.async(function*() {
 			yield episodeBody();
 			return false;
