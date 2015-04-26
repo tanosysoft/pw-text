@@ -17,7 +17,6 @@ module.exports = Q.async(function*() {
 		"Back": null,
 		"Confirm": Q.async(function*() {
 			yield episodeBody();
-			return false;
 		}),
 	});
 });
