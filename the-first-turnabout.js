@@ -286,6 +286,7 @@ episodeBody = Q.async(function*() {
 			return false;
 		}),
 		"Larry Butz": Q.async(function*() {
+			yield cli.breakLine();
 		}),
 		"Mia Fey": Q.async(function*() {
 			yield cli.breakLine();
@@ -320,6 +321,113 @@ episodeBody = Q.async(function*() {
 			return false;
 		}),
 	});
+	yield cli.paragraph ([
+		[{who:"Phoenix"}, {dh:true}, {d:40}, "The defendant?", {w:750}, " Well,", {w:250}, " that's Larry Butz,",
+			{w:250}, " Your Honor.", {w:1000}],
+	]);
+	yield cli.paragraph ([
+		[{d:100}, "The judge nods.", {w:1000}],
+	]);
+	yield cli.paragraph ([
+		[{who:"Judge"}, {dh:true}, {d:50}, "Correct.", {w:1000}, " Just keep your wits about you and you'll do fine.", {w:1000}],
+		[{di:true}, "Next question:", {w:1000}],
+		[{di:true}, "This is a murder trial.", {w:250}, " Tell me,", {w:250}, " what's the victim's name?", {w:1000}],
+	]);
+	yield cli.paragraph ([
+		[{who:"Phoenix"}, {dh:true}, {d:40}, "(Whew,", {w:500}, " I know this one!", {w:1000}, " Glad I read the case report cover to cover"],
+		[{di:true}, "so many times.", {w:2000}, " It's...", {w:500}, " wait", {w:500}, "... Uh-oh!", {w:1000}],
+		[{di:true}, {d:30}, "No...", {w:250}, " no way!", {w:500}, " I forgot!", {w:750}, " I'm drawing a total blank here!)", {w:1000}],
+	]);
+	yield cli.paragraph ([
+		[{who:"Mia"}, {dh:true}, {d:40}, "Phoenix!", {w:500}, " Are you absolutely SURE you're up to this?", {w:1000}],
+		[{di:true}, "You don't even know the victim's name!?", {w:1000}],
+	]);
+	yield cli.paragraph ([
+		[{who:"Phoenix"}, {dh:true}, {d:40}, "Oh, the victim!", {w:500}, " O-", {w:250}, "Of course I know the victim's name!", {w:1000}],
+		[{di:true}, {d:50}, "I, um,", {w:250}, " just forgot.", {w:1000}],
+		[{di:true}, "... Temporarily.", {w:1000}],
+	]);
+	yield cli.paragraph ([
+		[{who:"Mia"}, {dh:true}, {d:60}, "I think I feel a migraine coming on.", {w:1000}],
+		[{di:true}, {d:40}, "Look,", {w:500}, " the defendant's name is listed in the Court Record.", {w:1000}],
+		[{di:true}, "Just type 'Court Record' to check it at anytime, okay?", {w:1000}],
+		[{di:true}, "Remember to check it often.", {w:500}, " Do it for me,", {w:250}, " please.", {w:1000}],
+		[{di:true}, "I'm begging you.", {w:1000}],
+	]);
+	yield cli.choice(Q.async(function*() {
+		if(cli.interlocutor() !== "Judge") {
+			yield cli.typePart({who:"Judge"}, {dh:true});
+		}
+		else {
+			yield cli.typePart({di:true});
+		}
+		yield cli.paragraph ([
+			[{d:50}, "Let's hear your answer.", {w:1000}, " Who is the victim in this case?", {w:1000}],
+		]);
+		yield cli.paragraph ([
+			[{d:40}, " - Mia Fey"],
+			[" - Cinder Block"],
+			[" - Cindy Stone"],
+		]);
+	}), {
+		"Mia Fey": Q.async(function*() {
+			yield cli.breakLine();
+			yield cli.paragraph ([
+				[{who:"Phoenix"}, {dh:true}, {d:60}, "Um...", {w:500}, " Mia Fey?", {w:1000}],
+			]);
+			yield cli.paragraph ([
+				[{who:"Mia"}, {dh:true}, {d:40}, "W-", {w:500}, "W-", {w:500}, "What!?", {w:1000}],
+				[{di:true}, "How can I be the victim!?", {w:1000}],
+			]);
+			yield cli.paragraph ([
+				[{who:"Phoenix"}, {dh:true}, {d:30}, "Oh!", {w:250}, " Right!", {w:250}, " Sorry!", {w:1000}, " I,", {w:250}, " er,", {w:250}],
+				[{di:true}, "it was the first name that popped into my head, and--", {w:750}],
+			]);
+			yield cli.paragraph ([
+				[{who:"Mia"}, {dh:true}, {d:40}, "The Court Record!", {w:1000}],
+				[{di:true}, "Remember to use it when you are in a pinch.", {w:1000}],
+			]);
+			yield cli.type ([
+				[{who:"Judge"}, {dh:true}, {d:60}, "Let me ask that one again:", {w:1000}],
+			]);
+			return false;
+		}),
+		"Cinder Block": Q.async(function*() {
+			yield cli.breakLine();
+			yield cli.paragraph ([
+				[{who:"Phoenix"}, {dh:true}, {d:40}, "Oh,", {w:250}, " um,", {w:500}, " wasn't it Ms. Block?", {w:1000}],
+				[{di:true}, "Ms. Cinder Block?", {w:1000}],
+			]);
+			yield cli.paragraph ([
+				[{d:100}, "The judge shakes his head, negatively.", {w:1000}],
+			]);
+			yield cli.paragraph ([
+				[{who:"Judge"}, {dh:true}, {d:60}, "The person in question was a victim of murder,", {w:250}],
+				[{di:true}, "not ill-conceived naming,", {w:250}, " Mr. Wright.", {w:1000}],
+			]);
+			yield cli.paragraph ([
+				[{who:"Mia"}, {dh:true}, {d:40}, "Wright?", {w:1000}, " If your forget something,", {w:250}],
+				[{di:true}, "just type 'Court Record' to help you remember.", {w:1000}],
+				[{di:true}, "A mistake in court could cost you the case.", {w:1000}],
+			]);
+			yield cli.type ([
+				[{who:"Judge"}, {dh:true}, {d:60}, "I'll ask you again:", {w:1000}],
+			]);
+			return false;
+		}),
+		"Cindy Stone": Q.async(function*() {
+			yield cli.breakLine();
+		}),
+	});
+	yield cli.paragraph ([
+		[{who:"Phoenix"}, {dh:true}, {d:50}, "Um...", {w:250}, " the victim's name is Cindy Stone.", {w:1000}],
+	]);
+	yield cli.paragraph ([
+		[{d:100}, "The judge nods.", {w:1000}],
+	]);
+	yield cli.paragraph ([
+		[{who:"Judge"}, {dh:true}, {d:50}, "Correct.", {w:1000}],
+	]);
 	process.exit();
 });
 if(!module.parent) {
