@@ -288,6 +288,36 @@ episodeBody = Q.async(function*() {
 		"Larry Butz": Q.async(function*() {
 		}),
 		"Mia Fey": Q.async(function*() {
+			yield cli.breakLine();
+			yield cli.paragraph ([
+				[{who:"Phoenix"}, {dh:true}, {d:50}, "The,", {w:250}, " um,", {w:250}, " defendant?", {w:1000}],
+				[{di:true}, {d:100}, "That's...", {w:500}, " er...", {w:500}, {d:60}, " Mia Fey?", {w:1000}],
+			]);
+			yield cli.paragraph ([
+				[{who:"Mia"}, {dh:true}, {d:50}, "Wrong,", {w:250}, " Wright.", {w:500}],
+				[{di:true}, "Look,", {w:250}, " I have to leave.", {w:1000}],
+				[{di:true}, "I have to go home.", {w:250}, " I'm...", {w:500}, " I'm expecting a delivery.", {w:1000}],
+			]);
+			yield cli.paragraph ([
+				[{who:"Phoenix"}, {dh:true}, {d:60}, "Aw, c'mon, Chief.", {w:750}],
+				[{di:true}, "There's no need to be going so soon,", {w:250}, " is there?", {w:1000}],
+			]);
+			yield cli.paragraph ([
+				[{who:"Mia"}, {dh:true}, {d:10}, "Wright!", {w:1000}],
+				[{di:true}, {d:40}, "Listen:", {w:250}, " the defendant is the one on trial", {w:250}, "--your client!", {w:1000}],
+				[{di:true}, {d:60}, "I mean,", {w:250}, " that's about as basic as you can get!", {w:1000}],
+			]);
+			yield cli.paragraph ([
+				[{who:"Phoenix"}, {dh:true}, {d:60}, "(I put my foot in it this time!", {w:500}, " I've got to relax!)", {w:1000}],
+			]);
+			yield cli.paragraph ([
+				[{d:100}, "The judge shakes his head, negatively.", {w:1000}],
+			]);
+			yield cli.type ([
+				[{who:"Judge"}, {dh:true}, {d:60}, "Sorry,", {w:250}, " I couldn't hear your answer.", {w:500},
+					" I'll ask once more.", {w:1000}],
+			]);
+			return false;
 		}),
 	});
 	process.exit();
