@@ -244,17 +244,20 @@ episodeBody = Q.async(function*() {
 		[{di:true}, {d:65}, "(Gulp...", {w:750}, " Hands", {w:500}, " shaking...",
 			{w:750}, " Eyesight", {w:500}, "... fading...)", {w:1000}],
 	]);
-	yield cli.paragraph ([
+	yield cli.type ([
 		[{who:"Judge"}, {dh:true}, {d:40}, "The test will consist of a few simple questions.", {w:1000}],
 		[{di:true}, "Answer them clearly and concisely.", {w:1000}],
-		[{di:true}, "Please state the name of the defendant in this case.", {w:500}],
 	]);
-	yield cli.paragraph ([
-		[{d:40}, " - Phoenix Wright"],
-		[" - Larry Butz"],
-		[" - Mia Fey"],
-	]);
-	yield cli.choice ({
+	yield cli.choice(Q.async(function*() {
+		yield cli.paragraph ([
+			[{di:true}, "Please state the name of the defendant in this case.", {w:500}],
+		]);
+		yield cli.paragraph ([
+			[{d:40}, " - Phoenix Wright"],
+			[" - Larry Butz"],
+			[" - Mia Fey"],
+		]);
+	}), {
 		"Phoenix Wright": Q.async(function*() {
 			yield cli.breakLine();
 			yield cli.paragraph ([
@@ -276,15 +279,9 @@ episodeBody = Q.async(function*() {
 			yield cli.paragraph ([
 				[{d:100}, "The judge shakes his head, negatively.", {w:1000}],
 			]);
-			yield cli.paragraph ([
+			yield cli.type ([
 				[{who:"Judge"}, {dh:true}, {d:60}, "Sorry,", {w:250}, " I couldn't hear your answer.", {w:500},
-					" I'll ask once more:", {w:1000}],
-				[{di:true}, "Please state the name of the defendant in this case.", {w:500}],
-			]);
-			yield cli.paragraph ([
-				[{d:40}, " - Phoenix Wright"],
-				[" - Larry Butz"],
-				[" - Mia Fey"],
+					" I'll ask once more.", {w:1000}],
 			]);
 			return false;
 		}),
