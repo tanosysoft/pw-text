@@ -1,0 +1,48 @@
+\{clear}Episode 1
+The First Turnabout
+
+\d30 - Back
+ - Confirm
+
+\choice:```{
+	Back: () => {
+		exit();
+	},
+	Confirm: () => {
+		goTo(0);
+	}
+}```
+
+\m0
+\clear
+\w1000
+\d0
+Episode 1 \w1000
+The First Turnabout \w3000
+
+\m100
+\d100
+Inside the compressing walls of a small apartment, \w250 blood
+runs all over a small statue held upside down by a man. \w1000
+
+\m200
+The blood drips from it to the wooden floor beside a fine lady's
+\id100 dead body... \w3000
+
+	\m300
+	\who:null
+	\d30 \dh *gasp*... \w750 *gasp*... \w1500
+	\d10 Dammit! \w1250
+	\d300 . . . \w1000 \d30 Why me? \w1500
+	\d50 I can't get caught... \w1500
+	\d10 Not like this! \w2000
+
+\m400
+\d100
+Shocked, \w250 the murderer stares at the woman he just killed. \w2000
+
+	\m500
+	\who:"Murderer"
+	\d60 \dh I-\{w:500}I've gota find someone to pin this on... \w1500
+	\d40 Someone like... \w1000 \d10 him! \w2000
+	\d60 I'll make it look like HE did it! \w2000
