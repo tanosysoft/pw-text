@@ -6,10 +6,9 @@ The First Turnabout
 
 \choice:```{
 	Back: () => {
-		exit();
+		process.exit();
 	},
 	Confirm: () => {
-		goTo(0);
 	}
 }```
 
