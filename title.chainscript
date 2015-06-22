@@ -1,0 +1,19 @@
+<clear><d30>\
+Phoenix Wright
+Ace Attorney
+
+ - New Game
+ - Continue
+ - Quit
+
+<choice:```{
+	"New Game": () => {
+		this.runFile('episode-1.chainscript');
+	},
+	Continue: () => {
+		this.continue();
+	},
+	Quit: () => {
+		this.exit();
+	},
+}```>
