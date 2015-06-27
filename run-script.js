@@ -10,8 +10,8 @@ exports = module.exports = function(path, startingLabel) {
 	let script = compile (
 		fs.readFileSync(path, { encoding: 'utf8' })
 	);
-	script.runFile = function(path) {
-		exports(path).done();
+	script.runFile = function() {
+		exports.apply(this, arguments).done();
 		this.exit();
 	};
 	return script.run(startingLabel);
