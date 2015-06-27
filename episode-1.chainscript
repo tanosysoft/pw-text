@@ -1,4 +1,4 @@
-<label:episodeMenu>\
+<label:episodeMenu,no-progress>\
 <clear><d40>\
 Episode 1
 The First Turnabout
@@ -15,7 +15,7 @@ The First Turnabout
 	},
 }```>
 
-<label:episodeStart>\
+<label:episodeStart,no-progress>\
 <clear><w1000><d0>\
 Episode 1<w1000>
 The First Turnabout<w3000>
@@ -299,7 +299,7 @@ as the judge prepares for the session.<p2000>
 	},
 }```>
 
-<label:defendantIsPhoenix>\
+<label:defendantIsPhoenix,no-progress>\
 
 <label:m53000>\
 <who:Phoenix>\
@@ -329,7 +329,7 @@ as the judge prepares for the session.<p2000>
 <adp><d60>Sorry,<w250> I couldn't hear your answer.<w500> I'll ask once more.<p>
 <goTo:whoIsTheDefendant>
 
-<label:defendantIsMia>\
+<label:defendantIsMia,no-progress>\
 
 <label:m60000>\
 <who:Phoenix>\
@@ -364,7 +364,7 @@ as the judge prepares for the session.<p2000>
 <who:Judge><adp><d60>Sorry,<w250> I couldn't hear your answer.<w500> I'll ask once more.<p>
 <goTo:whoIsTheDefendant>
 
-<label:defendantIsLarry>\
+<label:defendantIsLarry,no-progress>\
 
 <who:Phoenix>\
 <adp><d40>The defendant?<w750> Well,<w250> that's Larry Butz,<w250> Your Honor.<p>
@@ -423,7 +423,7 @@ as the judge prepares for the session.<p2000>
 	},
 }```>
 
-<label:victimIsMia>\
+<label:victimIsMia,no-progress>\
 
 <label:m75000>\
 <who:Phoenix>\
@@ -449,7 +449,7 @@ as the judge prepares for the session.<p2000>
 <adp><d60>Let me ask that one again:<p>
 <goTo:whoIsTheVictim>
 
-<label:victimIsCinder>\
+<label:victimIsCinder,no-progress>\
 
 <label:m80000>\
 <who:Phoenix>\
@@ -475,7 +475,7 @@ as the judge prepares for the session.<p2000>
 <adp><d60>I'll ask you again:<p>
 <goTo:whoIsTheVictim>
 
-<label:victimIsCindy>\
+<label:victimIsCindy,no-progress>\
 
 <label:m85000>\
 <who:Phoenix>\
