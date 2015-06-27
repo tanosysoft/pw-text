@@ -2,7 +2,9 @@
 'use strict';
 let fs = require('fs');
 let commandQueue = require('chain/command-queue');
-commandQueue.registerCommandHandlers(require('chain/io'));
+let io = require('chain/io');
+commandQueue.registerCommandHandlers(io);
+commandQueue.push({'no-skip':true});
 let compile = require('chain/compile-script');
 exports = module.exports = function(path, startingLabel) {
 	let script = compile (
