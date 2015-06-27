@@ -26,6 +26,7 @@ Inside the compressing walls of a small apartment,<w250> blood
 runs all over a small statue held upside down by a man.<w1000>
 
 <label:m2000>\
+<d100>\
 The blood drips from it to the wooden floor beside a fine lady's
 dead body...<w3000>
 
@@ -85,7 +86,7 @@ extremely mature and reliable.<w2000>
 <d40>Mia smiles.<w1000>
 
 <label:m15000>\
-<adp>Not everyone takes on a murder trial right off the bat like this.<w500>
+<adp><d40>Not everyone takes on a murder trial right off the bat like this.<w500>
 <adp>It says a lot about you...<w1000> and your client as well.<w2000>
 
 <label:m16000>\
@@ -188,27 +189,27 @@ extremely mature and reliable.<w2000>
 <adp>My first case is a fairly simple one.<w1000>
 
 <label:m37000>\
-<adp>A young woman was killed in her apartment.<w1000>
+<adp><d40>A young woman was killed in her apartment.<w1000>
 <adp>The guy they arrested was the unlucky sap dating her:<w500>
 <adp>Larry Butz...<w1000> my best friend since grade school.<w1500>
 
 <label:m38000>\
-<adp>Our school had a saying:<w1000>
+<adp><d40>Our school had a saying:<w1000>
 <adp>"When something smells,<w500> it's usually the Butz."<w2000>
 <adp>In the 23 years I've known him,<w250> it's usually been true.<w1000>
 <adp>He has a knack for getting himself in trouble.<w1000>
 
 <label:m39000>\
-<adp>One thing I can say though:<w1000> it's usually not his fault.<w500>
+<adp><d40>One thing I can say though:<w1000> it's usually not his fault.<w500>
 <adp>He just has terrible luck.<w1000>
 
 <label:m40000>\
-<adp><id10>But I know better than anyone<w250> that he's a good guy at heart.<w1000>
+<adp><d50>But I know better than anyone<w250> that he's a good guy at heart.<w1000>
 <adp>That and I owe him one.<w250> Which is why I took the case...<w1000>
 <adp>to clear his name.<w1000>
 
 <label:m41000>\
-<adp>And that's just what I'm going to do!<w3000>
+<adp><d50>And that's just what I'm going to do!<w3000>
 
 <label:m42000>\
 <clear><w2000>\
