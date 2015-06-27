@@ -389,17 +389,10 @@ as the judge prepares for the session.<w2000>
 <di>Remember to check it often.<w500> Do it for me,<w250> please.<w1000>
 <di>I'm begging you.<w1000>
 
-<label:m74000>\
-<who:Judge>\
-<dh><d50>Let's hear your answer.<w1000> Who is the victim in this case?<w1000>
-
-<goTo:whoIsTheVictimOptions>
-
 <label:whoIsTheVictim>\
 <who:Judge>\
-<di><d50>Let's hear your answer.<w1000> Who is the victim in this case?<w1000>
+<adp><d50>Let's hear your answer.<w1000> Who is the victim in this case?<w1000>
 
-<label:whoIsTheVictimOptions>\
  - Mia Fey
  - Cinder Block
  - Cindy Stone
