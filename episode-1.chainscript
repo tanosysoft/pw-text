@@ -54,6 +54,7 @@ dead body...<w3000>
 <clear><w2000>\
 <d20>You can access the Court Record by typing that on any prompt.<p>
 
+<w1000>\
 <label:m8000>\
 <clear><w2500>\
 <d100>August 3, 9:47 AM<w500>
@@ -183,6 +184,7 @@ extremely mature and reliable.<p2000>
 <adp><d100>(Hmm...<w1000> The person responsible for your girlfriend's death?<p>
 <adp>The newspapers say it was<w500> you...)<p>
 
+<w1000>\
 <label:m36000>\
 <clear><w2000>\
 <who:Phoenix>\
@@ -217,6 +219,7 @@ extremely mature and reliable.<p2000>
 <who:Phoenix>\
 <adp><d50>And that's just what I'm going to do!<p>
 
+<w1000>\
 <label:m42000>\
 <clear><w2000>\
 <d100>August 3, 10:00 AM<w500>
