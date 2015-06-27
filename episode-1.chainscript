@@ -31,20 +31,20 @@ dead body...<w3000>
 
 <label:m3000>\
 <who:null>\
-<dh><d30>*gasp*...<w750> *gasp*...<w1500>
-<di><d10>Dammit!<w1250>
-<di><d300>...<w1000><d30> Why me?<w1500>
-<di><d50>I can't get caught...<w1500>
-<di><d10>Not like this!<w2000>
+<adp><d30>*gasp*...<w750> *gasp*...<w1500>
+<adp><d10>Dammit!<w1250>
+<adp><d300>...<w1000><d30> Why me?<w1500>
+<adp><d50>I can't get caught...<w1500>
+<adp><d10>Not like this!<w2000>
 
 <label:m4000>\
 <d100>Shocked,<w250> the murderer stares at the woman he just killed.<w2000>
 
 <label:m5000>\
 <who:Murderer>\
-<dh><d60>I-<w500> I've gotta find someone to pin this on...<w1500>
-<di><d40>Someone like...<w1000><d10> him!<w2000>
-<di><d60>I'll make it look like HE did it!<w2000>
+<adp><d60>I-<w500> I've gotta find someone to pin this on...<w1500>
+<adp><d40>Someone like...<w1000><d10> him!<w2000>
+<adp><d60>I'll make it look like HE did it!<w2000>
 
 <label:m6000>\
 <d100>The horror in his face fades into an evil grin as he plots his next move...<w2000>
@@ -61,15 +61,15 @@ Defendant Lobby No. 2<w2000>
 
 <label:m9000>\
 <who:Phoenix>\
-<dh><d30>(Boy am I nervous!)<w1500>
+<adp><d30>(Boy am I nervous!)<w1500>
 
 <label:m10000>\
 <who:Mia>\
-<dh><d40>Wright!<w1250>
+<adp><d40>Wright!<w1250>
 
 <label:m11000>\
 <who:Phoenix>\
-<dh><d30>Oh,<w1000> h-<w500>hiya, Chief.<w1500>
+<adp><d30>Oh,<w1000> h-<w500>hiya, Chief.<w1500>
 
 <label:m12000>\
 <d100>A gorgeous long-haired brunette wearing an impeccable, sexy black
@@ -78,137 +78,137 @@ extremely mature and reliable.<w2000>
 
 <label:m13000>\
 <who:Mia>\
-<dh><d40>Whew,<w500> I'm glad I made it on time.<w2000>
-<di>Well,<w500> I have to say, Phoenix,<w250> I'm impressed!<w1000>
+<adp><d40>Whew,<w500> I'm glad I made it on time.<w2000>
+<adp>Well,<w500> I have to say, Phoenix,<w250> I'm impressed!<w1000>
 
 <label:m14000>\
 <d40>Mia smiles.<w1000>
 
 <label:m15000>\
-<di>Not everyone takes on a murder trial right off the bat like this.<w500>
-<di>It says a lot about you...<w1000> and your client as well.<w2000>
+<adp>Not everyone takes on a murder trial right off the bat like this.<w500>
+<adp>It says a lot about you...<w1000> and your client as well.<w2000>
 
 <label:m16000>\
 <who:Phoenix>\
-<dh><d80>Um...<w500> thanks.<w1000>
-<di><d40>Actually,<w500> it's because I owe him a favor.<w1000>
+<adp><d80>Um...<w500> thanks.<w1000>
+<adp><d40>Actually,<w500> it's because I owe him a favor.<w1000>
 
 <label:m17000>\
 <who:Mia>\
-<dh><d40>A favor?<w1000>
-<di>You mean, you knew the defendant before this case?<w1000>
+<adp><d40>A favor?<w1000>
+<adp>You mean, you knew the defendant before this case?<w1000>
 
 <label:m18000>\
 <who:Phoenix>\
-<dh><d40>Yes.<w1000>
-<di>Actually,<w500> I kind of owe my current job to him.<w1000>
-<di>He's one of the reasons I became an attorney.<w1000>
+<adp><d40>Yes.<w1000>
+<adp>Actually,<w500> I kind of owe my current job to him.<w1000>
+<adp>He's one of the reasons I became an attorney.<w1000>
 
 <label:m19000>\
 <who:Mia>\
-<dh><d40>Well, that's news to me!<w1000>
+<adp><d40>Well, that's news to me!<w1000>
 
 <label:m20000>\
 <who:Phoenix>\
-<dh><d40>I want to help him out any way I can!<w750>
-<di>I just... really want to help him. I owe him that much.<w2500>
+<adp><d40>I want to help him out any way I can!<w750>
+<adp>I just... really want to help him. I owe him that much.<w2500>
 
 <label:m21000>\
 <who:null>\
-<dh><d10>(It's over!<w500><d60> My life,<w750> everything,<w250> it's all over!)<w1000>
+<adp><d10>(It's over!<w500><d60> My life,<w750> everything,<w250> it's all over!)<w1000>
 
 <label:m22000>\
 <d60>An extremely noisy person just entered the lobby room, screaming.<w2000>
 
 <label:m23000>\
 <who:Mia>\
-<dh><d150>...<w2000>
-<di><d40>Isn't that your client screaming over there?<w1000>
+<adp><d150>...<w2000>
+<adp><d40>Isn't that your client screaming over there?<w1000>
 
 <label:m24000>\
 <who:Phoenix>\
-<dh><d80>Yeah...<w1000><d40> that's him.<w1000>
+<adp><d80>Yeah...<w1000><d40> that's him.<w1000>
 
 <label:m25000>\
 <who:null>\
-<dh><d10>(Death!<w500> Despair!<w500><d40> Ohhhh!<w1000><d30> I'm gonna do it,<w500> I'm gonna die!!!)<w1500>
+<adp><d10>(Death!<w500> Despair!<w500><d40> Ohhhh!<w1000><d30> I'm gonna do it,<w500> I'm gonna die!!!)<w1500>
 
 <label:m26000>\
 <who:Mia>\
-<dh><d60>It sounds like he wants to die...<w1000>
+<adp><d60>It sounds like he wants to die...<w1000>
 
 <label:m27000>\
 <who:Phoenix>\
-<dh><d60>Um,<w500> yeah.<w1000><dd20> *sigh*<w1000>
+<adp><d60>Um,<w500> yeah.<w1000><dd20> *sigh*<w1000>
 
 <label:m28000>\
 <who:Butz>\
-<dh><d25>Nick!!!<w1000>
+<adp><d25>Nick!!!<w1000>
 
 <label:m29000>\
 <who:Phoenix>\
-<dh><d60>Hey.<w500> Hey there,<w150> Larry.<w1000>
+<adp><d60>Hey.<w500> Hey there,<w150> Larry.<w1000>
 
 <label:m30000>\
 <who:Butz>\
-<dh><d20>Dude,<w250> I'm so guilty!!<w1000>
-<di>Tell them I'm guilty!!!<w1000>
-<di><dd5>Gimme the death sentence!<w750>
-<di><id5>I ain't afraid to die!<w1000>
+<adp><d20>Dude,<w250> I'm so guilty!!<w1000>
+<adp>Tell them I'm guilty!!!<w1000>
+<adp><dd5>Gimme the death sentence!<w750>
+<adp><id5>I ain't afraid to die!<w1000>
 
 <label:m31000>\
 <who:Phoenix>\
-<dh><d40>What!?<w500> What's wrong,<w150> Larry?<w1000>
+<adp><d40>What!?<w500> What's wrong,<w150> Larry?<w1000>
 
 <label:m32000>\
 <who:Butz>\
-<dh><d80>Oh,<w1000> it's all over...<w500>
-<di><id20>I...<w500><dd45> I'm finished.<w500><dd40> Finished!<w1000>
+<adp><d80>Oh,<w1000> it's all over...<w500>
+<adp><id20>I...<w500><dd45> I'm finished.<w500><dd40> Finished!<w1000>
 
 <label:m33000>\
 <d60>Butz sobs uncontrollably.<w1000>
 
 <label:m34000>\
 <who:Butz>\
-<di><d20>I can't live in a world without her!<w500> I can't!<w1000>
-<di><d100>Who...<w500><dd50> who took her away from me,<w150> Nick?<w1000>
-<di><d30>Who did this!?<w1000>
-<di><d150>Aww,<w250> Nick,<w500><d60> ya gotta tell me!<w500>
-<di><d40>Who took my baby away!?<w1000>
+<adp><d20>I can't live in a world without her!<w500> I can't!<w1000>
+<adp><d100>Who...<w500><dd50> who took her away from me,<w150> Nick?<w1000>
+<adp><d30>Who did this!?<w1000>
+<adp><d150>Aww,<w250> Nick,<w500><d60> ya gotta tell me!<w500>
+<adp><d40>Who took my baby away!?<w1000>
 
 <label:m35000>\
 <who:Phoenix>\
-<dh><d100>(Hmm...<w1000> The person responsible for your girlfriend's death?<w1000>
-<di>The newspapers say it was<w500> you...)<w3000>
+<adp><d100>(Hmm...<w1000> The person responsible for your girlfriend's death?<w1000>
+<adp>The newspapers say it was<w500> you...)<w3000>
 
 <label:m36000>\
 <clear><w2000>\
 <who:Phoenix>\
-<dh><d40>My name is Phoenix Wright.<w1000> Here's the story:<w1000>
-<di>My first case is a fairly simple one.<w1000>
+<adp><d40>My name is Phoenix Wright.<w1000> Here's the story:<w1000>
+<adp>My first case is a fairly simple one.<w1000>
 
 <label:m37000>\
-<di>A young woman was killed in her apartment.<w1000>
-<di>The guy they arrested was the unlucky sap dating her:<w500>
-<di>Larry Butz...<w1000> my best friend since grade school.<w1500>
+<adp>A young woman was killed in her apartment.<w1000>
+<adp>The guy they arrested was the unlucky sap dating her:<w500>
+<adp>Larry Butz...<w1000> my best friend since grade school.<w1500>
 
 <label:m38000>\
-<di>Our school had a saying:<w1000>
-<di>"When something smells,<w500> it's usually the Butz."<w2000>
-<di>In the 23 years I've known him,<w250> it's usually been true.<w1000>
-<di>He has a knack for getting himself in trouble.<w1000>
+<adp>Our school had a saying:<w1000>
+<adp>"When something smells,<w500> it's usually the Butz."<w2000>
+<adp>In the 23 years I've known him,<w250> it's usually been true.<w1000>
+<adp>He has a knack for getting himself in trouble.<w1000>
 
 <label:m39000>\
-<di>One thing I can say though:<w1000> it's usually not his fault.<w500>
-<di>He just has terrible luck.<w1000>
+<adp>One thing I can say though:<w1000> it's usually not his fault.<w500>
+<adp>He just has terrible luck.<w1000>
 
 <label:m40000>\
-<di><id10>But I know better than anyone<w250> that he's a good guy at heart.<w1000>
-<di>That and I owe him one.<w250> Which is why I took the case...<w1000>
-<di>to clear his name.<w1000>
+<adp><id10>But I know better than anyone<w250> that he's a good guy at heart.<w1000>
+<adp>That and I owe him one.<w250> Which is why I took the case...<w1000>
+<adp>to clear his name.<w1000>
 
 <label:m41000>\
-<di>And that's just what I'm going to do!<w3000>
+<adp>And that's just what I'm going to do!<w3000>
 
 <label:m42000>\
 <clear><w2000>\
@@ -222,51 +222,51 @@ as the judge prepares for the session.<w2000>
 
 <label:m44000>\
 <who:Judge>\
-<dh><d0>*Bang!*<w1000>
-<di><d60>The court is now in session for the trial of Mr. Larry Butz.<w1000>
+<adp><d0>*Bang!*<w1000>
+<adp><d60>The court is now in session for the trial of Mr. Larry Butz.<w1000>
 
 <label:m45000>\
 <who:Phoenix>\
-<dh><d40>The,<w250> um,<w500> defense is ready,<w250> Your Honor.<w1000>
+<adp><d40>The,<w250> um,<w500> defense is ready,<w250> Your Honor.<w1000>
 
 <label:m46000>\
 <who:Judge>\
-<dh><d20>Ahem.<w500>
-<di><d60>Mr. Wright?<w1000> This is your first trial, is it not?<w1000>
+<adp><d20>Ahem.<w500>
+<adp><d60>Mr. Wright?<w1000> This is your first trial, is it not?<w1000>
 
 <label:m47000>\
 <who:Phoenix>\
-<dh><d40>Y-<w250>Yes,<w250> Your Honor.<w500>
-<di>I'm,<w150> um,<w250><id30> a little nervous.<w1000>
+<adp><d40>Y-<w250>Yes,<w250> Your Honor.<w500>
+<adp>I'm,<w150> um,<w250><id30> a little nervous.<w1000>
 
 <label:m48000>\
 <who:Judge>\
-<dh><d40>Your conduct during this trial will decide the fate of your client.<w1000>
-<di>Murder is a serious charge.<w1000>
-<di>For your client's sake,<w150> I hope you can control your nerves.<w1000>
+<adp><d40>Your conduct during this trial will decide the fate of your client.<w1000>
+<adp>Murder is a serious charge.<w1000>
+<adp>For your client's sake,<w150> I hope you can control your nerves.<w1000>
 
 <label:m49000>\
 <who:Phoenix>\
-<dh><d60>Thank...<w500> thank you,<w250> Your Honor.<w1000>
+<adp><d60>Thank...<w500> thank you,<w250> Your Honor.<w1000>
 
 <label:m50000>\
 <who:Judge>\
-<dh><d60>...<w1500>
-<di><d40>Mr. Wright,<w250> given the circumstances...<w1000>
-<di>I think we should have a test to ascertain your readiness.<w1000>
+<adp><d60>...<w1500>
+<adp><d40>Mr. Wright,<w250> given the circumstances...<w1000>
+<adp>I think we should have a test to ascertain your readiness.<w1000>
 
 <label:m51000>\
 <who:Phoenix>\
-<dh><d40>Yes, Your Honor.<w1000>
-<di><d65>(Gulp...<w750> Hands<w500> shaking...<w750> Eyesight<w500>... fading...)<w1000>
+<adp><d40>Yes, Your Honor.<w1000>
+<adp><d65>(Gulp...<w750> Hands<w500> shaking...<w750> Eyesight<w500>... fading...)<w1000>
 
 <label:m52000>\
 <who:Judge>\
-<dh><d40>The test will consist of a few simple questions.<w1000>
-<di>Answer them clearly and concisely.<w1000>
+<adp><d40>The test will consist of a few simple questions.<w1000>
+<adp>Answer them clearly and concisely.<w1000>
 <label:whoIsTheDefendant>\
 <who:Judge>\
-<di><d40>Please state the name of the defendant in this case.<w500>
+<adp><d40>Please state the name of the defendant in this case.<w500>
 
 <d40>\
  - Phoenix Wright
@@ -289,105 +289,105 @@ as the judge prepares for the session.<w2000>
 
 <label:m53000>\
 <who:Phoenix>\
-<dh><d60>Um...<w500> the defendant...<w250> is me,<w250> right?<w1000>
+<adp><d60>Um...<w500> the defendant...<w250> is me,<w250> right?<w1000>
 
 <label:m54000>\
 <who:Mia>\
-<dh><d20>Wright!<w500> Have you completely lost your mind?<w500> Focus!<w1000>
-<di><d40>The defendant is the person on trial!<w1000>
-<di>You're his lawyer!<w1000>
+<adp><d20>Wright!<w500> Have you completely lost your mind?<w500> Focus!<w1000>
+<adp><d40>The defendant is the person on trial!<w1000>
+<adp>You're his lawyer!<w1000>
 
 <label:m55000>\
 <who:Phoenix>\
-<dh><d40>Um,<w150> er,<w250> eh?<w1000>
-<di>Oh yeah,<w250> right!<w500> Eh heh heh.<w1000>
+<adp><d40>Um,<w150> er,<w250> eh?<w1000>
+<adp>Oh yeah,<w250> right!<w500> Eh heh heh.<w1000>
 
 <label:m56000>\
 <who:Mia>\
-<dh><d40>This is no laughing matter!<w1000>
-<di>You did pass the bar, didn't you?<w1000>
+<adp><d40>This is no laughing matter!<w1000>
+<adp>You did pass the bar, didn't you?<w1000>
 
 <label:m57000>\
 <d100>The judge shakes his head, negatively.<w1000>
 
 <label:m58000>\
 <who:Judge>\
-<dh><d60>Sorry,<w250> I couldn't hear your answer.<w500> I'll ask once more.<w1000>
+<adp><d60>Sorry,<w250> I couldn't hear your answer.<w500> I'll ask once more.<w1000>
 <goTo:whoIsTheDefendant>
 
 <label:defendantIsMia>\
 
 <label:m60000>\
 <who:Phoenix>\
-<dh><d50>The,<w250> um,<w250> defendant?<w1000>
-<di><d100>That's...<w500> er...<w500><d60> Mia Fey?<w1000>
+<adp><d50>The,<w250> um,<w250> defendant?<w1000>
+<adp><d100>That's...<w500> er...<w500><d60> Mia Fey?<w1000>
 
 <label:m61000>\
 <who:Mia>\
-<dh><d50>Wrong,<w250> Wright.<w500>
-<di>Look,<w250> I have to leave.<w1000>
-<di>I have to go home.<w250> I'm...<w500> I'm expecting a delivery.<w1000>
+<adp><d50>Wrong,<w250> Wright.<w500>
+<adp>Look,<w250> I have to leave.<w1000>
+<adp>I have to go home.<w250> I'm...<w500> I'm expecting a delivery.<w1000>
 
 <label:m62000>\
 <who:Phoenix>\
-<dh><d60>Aw, c'mon, Chief.<w750>
-<di>There's no need to be going so soon,<w250> is there?<w1000>
+<adp><d60>Aw, c'mon, Chief.<w750>
+<adp>There's no need to be going so soon,<w250> is there?<w1000>
 
 <label:m63000>\
 <who:Mia>\
-<dh><d10>Wright!<w1000>
-<di><d40>Listen:<w250> the defendant is the one on trial<w250>--your client!<w1000>
-<di><d60>I mean,<w250> that's about as basic as you can get!<w1000>
+<adp><d10>Wright!<w1000>
+<adp><d40>Listen:<w250> the defendant is the one on trial<w250>--your client!<w1000>
+<adp><d60>I mean,<w250> that's about as basic as you can get!<w1000>
 
 <label:m64000>\
 <who:Phoenix>\
-<dh><d60>(I put my foot in it this time!<w500> I've got to relax!)<w1000>
+<adp><d60>(I put my foot in it this time!<w500> I've got to relax!)<w1000>
 
 <label:m65000>\
 <d100>The judge shakes his head, negatively.<w1000>
 
 <label:m66000>\
-<who:Judge><dh><d60>Sorry,<w250> I couldn't hear your answer.<w500> I'll ask once more.<w1000>
+<who:Judge><adp><d60>Sorry,<w250> I couldn't hear your answer.<w500> I'll ask once more.<w1000>
 <goTo:whoIsTheDefendant>
 
 <label:defendantIsLarry>\
 
 <who:Phoenix>\
-<dh><d40>The defendant?<w750> Well,<w250> that's Larry Butz,<w250> Your Honor.<w1000>
+<adp><d40>The defendant?<w750> Well,<w250> that's Larry Butz,<w250> Your Honor.<w1000>
 
 <label:m68000>\
 <d100>The judge nods.<w1000>
 
 <label:m69000>\
 <who:Judge>\
-<dh><d50>Correct.<w1000> Just keep your wits about you and you'll do fine.<w1000>
-<di>Next question:<w1000>
-<di>This is a murder trial.<w250> Tell me,<w250> what's the victim's name?<w1000>
+<adp><d50>Correct.<w1000> Just keep your wits about you and you'll do fine.<w1000>
+<adp>Next question:<w1000>
+<adp>This is a murder trial.<w250> Tell me,<w250> what's the victim's name?<w1000>
 
 <label:m70000>\
 <who:Phoenix>\
-<dh><d40>(Whew,<w500> I know this one!<w1000> Glad I read the case report cover to cover
-<di>so many times.<w2000> It's...<w500> wait<w500>... Uh-oh!<w1000>
-<di><d30>No...<w250> no way!<w500> I forgot!<w750> I'm drawing a total blank here!)<w1000>
+<adp><d40>(Whew,<w500> I know this one!<w1000> Glad I read the case report cover to cover
+<adp>so many times.<w2000> It's...<w500> wait<w500>... Uh-oh!<w1000>
+<adp><d30>No...<w250> no way!<w500> I forgot!<w750> I'm drawing a total blank here!)<w1000>
 
 <label:m71000>\
 <who:Mia>\
-<dh><d40>Phoenix!<w500> Are you absolutely SURE you're up to this?<w1000>
-<di>You don't even know the victim's name!?<w1000>
+<adp><d40>Phoenix!<w500> Are you absolutely SURE you're up to this?<w1000>
+<adp>You don't even know the victim's name!?<w1000>
 
 <label:m72000>\
 <who:Phoenix>\
-<dh><d40>Oh, the victim!<w500> O-<w250>Of course I know the victim's name!<w1000>
-<di><d50>I, um,<w250> just forgot.<w1000>
-<di>... Temporarily.<w1000>
+<adp><d40>Oh, the victim!<w500> O-<w250>Of course I know the victim's name!<w1000>
+<adp><d50>I, um,<w250> just forgot.<w1000>
+<adp>... Temporarily.<w1000>
 
 <label:m73000>\
 <who:Mia>\
-<dh><d60>I think I feel a migraine coming on.<w1000>
-<di><d40>Look,<w500> the defendant's name is listed in the Court Record.<w1000>
-<di>Just type 'Court Record' to check it at anytime, okay?<w1000>
-<di>Remember to check it often.<w500> Do it for me,<w250> please.<w1000>
-<di>I'm begging you.<w1000>
+<adp><d60>I think I feel a migraine coming on.<w1000>
+<adp><d40>Look,<w500> the defendant's name is listed in the Court Record.<w1000>
+<adp>Just type 'Court Record' to check it at anytime, okay?<w1000>
+<adp>Remember to check it often.<w500> Do it for me,<w250> please.<w1000>
+<adp>I'm begging you.<w1000>
 
 <label:whoIsTheVictim>\
 <who:Judge>\
@@ -413,63 +413,63 @@ as the judge prepares for the session.<w2000>
 
 <label:m75000>\
 <who:Phoenix>\
-<dh><d60>Um...<w500> Mia Fey?<w1000>
+<adp><d60>Um...<w500> Mia Fey?<w1000>
 
 <label:m76000>\
 <who:Mia>\
-<dh><d40>W-<w500>W-<w500>What!?<w1000>
-<di>How can I be the victim!?<w1000>
+<adp><d40>W-<w500>W-<w500>What!?<w1000>
+<adp>How can I be the victim!?<w1000>
 
 <label:m77000>\
 <who:Phoenix>\
-<dh><d30>Oh!<w250> Right!<w250> Sorry!<w1000> I,<w250> er,<w250>
-<di>it was the first name that popped into my head, and--<w750>
+<adp><d30>Oh!<w250> Right!<w250> Sorry!<w1000> I,<w250> er,<w250>
+<adp>it was the first name that popped into my head, and--<w750>
 
 <label:m78000>\
 <who:Mia>\
-<dh><d40>The Court Record!<w1000>
-<di>Remember to use it when you are in a pinch.<w1000>
+<adp><d40>The Court Record!<w1000>
+<adp>Remember to use it when you are in a pinch.<w1000>
 
 <label:m79000>\
 <who:Judge>\
-<dh><d60>Let me ask that one again:<w1000>
+<adp><d60>Let me ask that one again:<w1000>
 <goTo:whoIsTheVictim>
 
 <label:victimIsCinder>\
 
 <label:m80000>\
 <who:Phoenix>\
-<dh><d40>Oh,<w250> um,<w500> wasn't it Ms. Block?<w1000>
-<di>Ms. Cinder Block?<w1000>
+<adp><d40>Oh,<w250> um,<w500> wasn't it Ms. Block?<w1000>
+<adp>Ms. Cinder Block?<w1000>
 
 <label:m81000>\
 <d100>The judge shakes his head, negatively.<w1000>
 
 <label:m82000>\
 <who:Judge>\
-<dh><d60>The person in question was a victim of murder,<w250>
-<di>not ill-conceived naming,<w250> Mr. Wright.<w1000>
+<adp><d60>The person in question was a victim of murder,<w250>
+<adp>not ill-conceived naming,<w250> Mr. Wright.<w1000>
 
 <label:m83000>\
 <who:Mia>\
-<dh><d40>Wright?<w1000> If your forget something,<w250>
-<di>just type 'Court Record' to help you remember.<w1000>
-<di>A mistake in court could cost you the case.<w1000>
+<adp><d40>Wright?<w1000> If your forget something,<w250>
+<adp>just type 'Court Record' to help you remember.<w1000>
+<adp>A mistake in court could cost you the case.<w1000>
 
 <label:m84000>\
 <who:Judge>\
-<dh><d60>I'll ask you again:<w1000>
+<adp><d60>I'll ask you again:<w1000>
 <goTo:whoIsTheVictim>
 
 <label:victimIsCindy>\
 
 <label:m85000>\
 <who:Phoenix>\
-<dh><d50>Um...<w250> the victim's name is Cindy Stone.<w1000>
+<adp><d50>Um...<w250> the victim's name is Cindy Stone.<w1000>
 
 <label:m86000>\
 <d100>The judge nods.<w1000>
 
 <label:m87000>\
 <who:Judge>\
-<dh><d50>Correct.<w1000>
+<adp><d50>Correct.<w1000>
