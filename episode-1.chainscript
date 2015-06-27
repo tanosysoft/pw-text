@@ -86,6 +86,7 @@ extremely mature and reliable.<w2000>
 <d40>Mia smiles.<w1000>
 
 <label:m15000>\
+<who:Mia>\
 <adp><d40>Not everyone takes on a murder trial right off the bat like this.<w500>
 <adp>It says a lot about you...<w1000> and your client as well.<w2000>
 
@@ -189,26 +190,31 @@ extremely mature and reliable.<w2000>
 <adp>My first case is a fairly simple one.<w1000>
 
 <label:m37000>\
+<who:Phoenix>\
 <adp><d40>A young woman was killed in her apartment.<w1000>
 <adp>The guy they arrested was the unlucky sap dating her:<w500>
 <adp>Larry Butz...<w1000> my best friend since grade school.<w1500>
 
 <label:m38000>\
+<who:Phoenix>\
 <adp><d40>Our school had a saying:<w1000>
 <adp>"When something smells,<w500> it's usually the Butz."<w2000>
 <adp>In the 23 years I've known him,<w250> it's usually been true.<w1000>
 <adp>He has a knack for getting himself in trouble.<w1000>
 
 <label:m39000>\
+<who:Phoenix>\
 <adp><d40>One thing I can say though:<w1000> it's usually not his fault.<w500>
 <adp>He just has terrible luck.<w1000>
 
 <label:m40000>\
+<who:Phoenix>\
 <adp><d50>But I know better than anyone<w250> that he's a good guy at heart.<w1000>
 <adp>That and I owe him one.<w250> Which is why I took the case...<w1000>
 <adp>to clear his name.<w1000>
 
 <label:m41000>\
+<who:Phoenix>\
 <adp><d50>And that's just what I'm going to do!<w3000>
 
 <label:m42000>\
