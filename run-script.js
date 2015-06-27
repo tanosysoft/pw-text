@@ -1,3 +1,4 @@
+#!/usr/bin/env iojs
 'use strict';
 let fs = require('fs');
 let commandQueue = require('chain/command-queue');
