@@ -2,6 +2,7 @@
 'use strict';
 let fs = require('fs');
 require('array.prototype.find');
+let _ = require('lodash');
 let commandQueue = require('chain/command-queue');
 let io = require('chain/io');
 commandQueue.registerCommandHandlers(io);
@@ -9,6 +10,7 @@ commandQueue.push({'no-skip':true});
 let compile = require('chain/compile-script');
 let latestScript;
 let scriptStack = [];
+let mixinFunctions;
 global.game = {};
 game.evidence = [
 	{
@@ -31,19 +33,7 @@ exports = module.exports = function(path, more) {
 	let script = compile (
 		fs.readFileSync(path, { encoding: 'utf8' })
 	);
-	script.runFile = function() {
-		exports.apply(this, arguments).done();
-		this.exit();
-	};
-	script.return = function() {
-		let previousScript = scriptStack.pop();
-		if(!previousScript) {
-			throw new Error("Can't return: The script stack is empty");
-		}
-		this.exit();
-		latestScript = previousScript.script;
-		previousScript.script.run(previousScript.returnLabel);
-	};
+	_.merge(script, mixinFunctions);
 	if(more.returnLabel) {
 		if(!latestScript) {
 			throw new Error("Return label specified, but no script is running");
@@ -55,6 +45,21 @@ exports = module.exports = function(path, more) {
 	}
 	latestScript = script;
 	return script.run(more.startingLabel);
+};
+mixinFunctions = {
+	runFile: function() {
+		exports.apply(this, arguments).done();
+		this.exit();
+	},
+	return: function() {
+		let previousScript = scriptStack.pop();
+		if(!previousScript) {
+			throw new Error("Can't return: The script stack is empty");
+		}
+		this.exit();
+		latestScript = previousScript.script;
+		previousScript.script.run(previousScript.returnLabel);
+	},
 };
 if(!module.parent) {
 	exports(process.argv[2], {
