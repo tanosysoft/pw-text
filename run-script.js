@@ -1,6 +1,7 @@
 #!/usr/bin/env iojs
 'use strict';
 let fs = require('fs');
+require('array.prototype.find');
 let commandQueue = require('chain/command-queue');
 let io = require('chain/io');
 commandQueue.registerCommandHandlers(io);
@@ -8,6 +9,23 @@ commandQueue.push({'no-skip':true});
 let compile = require('chain/compile-script');
 let latestScript;
 let scriptStack = [];
+global.game = {};
+game.evidence = [
+	{
+		name: "Attorney's Badge",
+		description: (
+			"No one would believe I was a defense"
+			+ "\nattorney if I didn't carry this."
+		),
+	},
+	{
+		name: "Cindy's Autopsy Report",
+		description: (
+			"Time of death: 7/31, 4PM-5PM."
+			+ "\nCause of death: loss of blood due to blunt trauma."
+		),
+	},
+];
 exports = module.exports = function(path, more) {
 	more = more || {};
 	let script = compile (

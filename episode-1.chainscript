@@ -297,6 +297,11 @@ as the judge prepares for the session.<p2000>
 	"Mia Fey": () => {
 		this.goTo('defendantIsMia');
 	},
+	"Court Record": () => {
+		this.runFile('court-record.chainscript', {
+			returnLabel: this.latestLabel,
+		});
+	},
 }```>
 
 <label:defendantIsPhoenix,no-progress>\
@@ -420,6 +425,11 @@ as the judge prepares for the session.<p2000>
 	},
 	"Cindy Stone": () => {
 		this.goTo('victimIsCindy');
+	},
+	"Court Record": () => {
+		this.runFile('court-record.chainscript', {
+			returnLabel: this.latestLabel,
+		});
 	},
 }```>
 
