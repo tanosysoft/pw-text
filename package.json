@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "array.prototype.find": "^1.0.0",
+    "lodash": "^3.9.3",
     "q": "^1.4.1"
   }
 }
