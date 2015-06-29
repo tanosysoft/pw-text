@@ -40,7 +40,7 @@ exports.prototype.evidenceMenu = function() {
 		, "Evidence"
 		, "\n"
 	);
-	evidenceList.forEach(function(evidence) {
+	evidenceList.forEach((evidence) => {
 		queue.push("\n - " + evidence.name);
 	});
 	queue.push (
@@ -50,14 +50,14 @@ exports.prototype.evidenceMenu = function() {
 			choice: [
 				{
 					matcher: "Back",
-					fn: function() {
+					fn: () => {
 						this.courtRecord();
 					},
 				},
 				{
 					default: true,
-					fn: function(option) {
-						let evidence = evidenceList.find(function(evidence) {
+					fn: (option) => {
+						let evidence = evidenceList.find((evidence) => {
 							return (
 								evidence.name.toLowerCase()
 								=== option.trim().toLowerCase()
@@ -105,7 +105,7 @@ exports.prototype.profilesMenu = function() {
 		, "Profiles"
 		, "\n"
 	);
-	profiles.forEach(function(profile) {
+	profiles.forEach((profile) => {
 		queue.push("\n - " + profile.name);
 	});
 	queue.push (
@@ -115,20 +115,20 @@ exports.prototype.profilesMenu = function() {
 			choice: [
 				{
 					matcher: "Evidence",
-					fn: function() {
+					fn: () => {
 						this.evidenceMenu();
 					},
 				},
 				{
 					matcher: "Back",
-					fn: function() {
+					fn: () => {
 						this.courtRecord();
 					},
 				},
 				{
 					default: true,
-					fn: function(option) {
-						let profile = profiles.find(function(profile) {
+					fn: (option) => {
+						let profile = profiles.find((profile) => {
 							return (
 								profile.name.toLowerCase()
 								=== option.trim().toLowerCase()
