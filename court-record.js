@@ -34,13 +34,63 @@ exports.prototype.courtRecord = function() {
 	);
 };
 exports.prototype.evidenceMenu = function() {
+	let evidenceList = game.evidence || [];
 	queue.push (
-		"\nNot implemented.", {p:true}
+		{clear:true}
+		, "Evidence"
+		, "\n"
+	);
+	evidenceList.forEach(function(evidence) {
+		queue.push("\n - " + evidence.name);
+	});
+	queue.push (
+		"\n - Back"
 		, "\n\n"
-		, (() => {
-			this.courtRecord();
-			return 'done';
-		}).bind(this)
+		, {
+			choice: [
+				{
+					matcher: "Back",
+					fn: function() {
+						this.courtRecord();
+					},
+				},
+				{
+					default: true,
+					fn: function(option) {
+						let evidence = evidenceList.find(function(evidence) {
+							return (
+								evidence.name.toLowerCase()
+								=== option.trim().toLowerCase()
+							);
+						});
+						if(!evidence) {
+							console.log("?");
+							return false;
+						}
+						this.checkEvidence(evidence);
+					},
+				},
+			],
+			context: this,
+		}
+	);
+};
+exports.prototype.checkEvidence = function(evidence) {
+	queue.push (
+		{clear:true}
+		, evidence.name
+		, "\n"
+		, "\n" + evidence.description
+		, "\n"
+		, "\n - Back"
+		, "\n\n"
+		, {
+			choice: {
+				Back: (() => {
+					this.evidenceMenu();
+				}).bind(this),
+			},
+		}
 	);
 };
 exports.prototype.profilesMenu = function() {
