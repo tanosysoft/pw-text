@@ -82,25 +82,91 @@ exports.prototype.checkEvidence = function(evidence) {
 		, "\n"
 		, "\n" + evidence.description
 		, "\n"
+		, "\n - Profiles"
 		, "\n - Back"
 		, "\n\n"
 		, {
 			choice: {
-				Back: (() => {
+				Profiles: () => {
+					this.profilesMenu();
+				},
+				Back: () => {
 					this.evidenceMenu();
-				}).bind(this),
+				},
 			},
+			context: this,
 		}
 	);
 };
 exports.prototype.profilesMenu = function() {
+	let profiles = game.profiles || [];
 	queue.push (
-		"\nNot implemented.", {p:true}
+		{clear:true}
+		, "Profiles"
+		, "\n"
+	);
+	profiles.forEach(function(profile) {
+		queue.push("\n - " + profile.name);
+	});
+	queue.push (
+		"\n - Back"
 		, "\n\n"
-		, (() => {
-			this.courtRecord();
-			return 'done';
-		}).bind(this)
+		, {
+			choice: [
+				{
+					matcher: "Evidence",
+					fn: function() {
+						this.evidenceMenu();
+					},
+				},
+				{
+					matcher: "Back",
+					fn: function() {
+						this.courtRecord();
+					},
+				},
+				{
+					default: true,
+					fn: function(option) {
+						let profile = profiles.find(function(profile) {
+							return (
+								profile.name.toLowerCase()
+								=== option.trim().toLowerCase()
+							);
+						});
+						if(!profile) {
+							console.log("?");
+							return false;
+						}
+						this.checkProfile(profile);
+					},
+				},
+			],
+			context: this,
+		}
+	);
+};
+exports.prototype.checkProfile = function(profile) {
+	queue.push (
+		{clear:true}
+		, profile.name
+		, "\n"
+		, "\n" + profile.description
+		, "\n"
+		, "\n - Evidence"
+		, "\n - Back"
+		, "\n\n"
+		, {
+			choice: {
+				Evidence: () => {
+					this.evidenceMenu();
+				},
+				Back: () => {
+					this.profilesMenu();
+				},
+			},
+			context: this,
+		}
 	);
 };
 exports.prototype.back = function() {
