@@ -7,6 +7,7 @@ let fs = require('fs');
 require('array.prototype.find');
 let _ = require('lodash');
 let Q = require('q');
+require('./global.game');
 let commandQueue = require('chain/command-queue');
 let io = require('chain/io');
 commandQueue.registerCommandHandlers(io);
@@ -15,23 +16,6 @@ let compile = require('chain/compile-script');
 let latestScript;
 let scriptStack = [];
 let mixinFunctions;
-global.game = {};
-game.evidence = [
-	{
-		name: "Attorney's Badge",
-		description: (
-			"No one would believe I was a defense"
-			+ "\nattorney if I didn't carry this."
-		),
-	},
-	{
-		name: "Cindy's Autopsy Report",
-		description: (
-			"Time of death: 7/31, 4PM-5PM."
-			+ "\nCause of death: loss of blood due to blunt trauma."
-		),
-	},
-];
 exports = module.exports = function(path, more) {
 	more = more || {};
 	if(more.returnable || more.returnLabel) {
